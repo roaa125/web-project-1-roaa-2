@@ -17,12 +17,60 @@
     <main>
       <br />
       <h3>Who is Cleopatra?</h3>
+      <!--
+      The form tag creates an area for user input.
+
+      Necessary attributes include:
+        method, which defines how data that is put into the form
+        is handled.
+          There are two possible values:
+            get, which displays all input at the end of the web address.
+            (NOTE: NOT GOOD FOR PRIVATE INFORMATION!!!)
+            post, which handles all input by sending it to a back-end
+            program.
+        id, which gives the form an identifying name different from
+        other forms.
+    -->
       <form id="answer-the-questions" method="get">
+        <!-- 
+        The fieldset tag groups related elements in a form.
+
+        Necessary attributes include:
+          form, which links the fieldset to the ID of the form it
+          belongs to.
+      -->
         <fieldset form="answer-the-questions">
+          <!-- 
+          The legend tag gives a title to the group of related inputs. 
+        -->
           <legend>Fill in the blank</legend>
+          <!-- 
+          The label tag is used to explain what input is expected
+          from the input that immediately follows or is right before
+          the label.
+
+          Important attributes include:
+            for, which links to the ID of the input the label is for.
+        -->
           <label for="fill-in-blank-1">
             Last pharaoh of Egypt Allied with</label
           >
+          <!--
+          The input tag creates the actual element that users will
+          type their information into.
+
+          Necessary attributes include:
+            type, which states what type of input it is
+              Examples: text, tel, password, email, button, checkbox, etc.
+            id, which gives the input an identifying name different from
+            other inputs.
+            name, which gives a variable for how to store this information
+            in the search bar or on the back-end.
+
+          Important attributes include:
+            required, which forces a user to have to enter input in the
+            input.
+        -->
           <input type="text" id="fill-in-blank-1" /> and
           <input type="text" id="fill-in-blank-1" />Known for political
           intelligence, not beauty <br />
@@ -30,6 +78,53 @@
         </fieldset>
       </form>
       <h3>Who Ruled for 66 years and built massive temples?</h3>
+      <fieldset form="answer-the-questions">
+          <legend> Answer the question <legend>
+
+          <!--
+            For radio buttons, the name attribute must be the same
+            for all options in the same group. Otherwise, they will
+            not work properly.
+
+            The values must be different for each option so that
+            the data from the user can be properly taken in.
+          -->
+            <br>
+
+          <input
+            type="radio"
+            id="ramses-the-second"
+            name="prog-exp"
+            value="Ramses II"
+            required
+          />
+          <label for="ramses-the-second">Ramses II</label>
+
+          <br>
+
+          <input
+            type="radio"
+            id="cleopatra-the-seventh"
+            name="prog-exp"
+            value="Cleopatra VII"
+            required
+          />
+          <label for="cleopatra-the-seventh">Cleopatra VII</label>
+
+          <br />
+
+          <input
+            type="radio"
+            id="narmer-the-first"
+            name="prog-exp"
+            value="Narmer (mina)"
+            required
+          />
+          <label for="over">Namer (mina)</label>
+        </fieldset>
+      <br>
+      <h3>What is this invention?</h3>
+      <img src="images/sickle.jpg" alt="The Sickle" width="232" height="160" />
       <form id="answer-the-questions" method="get">
         <fieldset form="answer-the-questions">
           <legend>Answer the question</legend>
@@ -37,30 +132,80 @@
           <input type="text" id="fill-in-blank-1" />
         </fieldset>
       </form>
-      <h3>What is</h3>
-      <img src="images/sickle.jpg" alt="The Sickle" width="232" height="160" />
-
+      <br> 
+      <h3>What is this invention?</h3>
       <img
         src="images/1295975985-Ancient-Egyptian-Calendar.webp"
         alt="The Calendar"
         width="232"
         height="160" />
+                <fieldset form="answer-the-questions">
+          <legend>Choose one answer</legend>
 
-      <td>Cosmetic Makeup</td>
-      <td>
-        The Egyptian invented eye makeup as far back as 4000 B.C. They combined
-        soot with a lead mineral called galena to create a black ointment known
-        as kohl. They also made green eye makeup by combining malachite with
-        galena to tint the ointment. Both men and women wore eye makeup did
-        believe it could cure eye diseases and keep them from falling victim to
-        the evil eye.
+          <!--
+            For checkboxes, the name attribute must be the same
+            for all options in the same group.
 
+            The values must be different for each option so that
+            the data from the user can be properly taken in.
+          -->
+          <input type="checkbox" id="The Sickle" name="Invention" value="The Sickle" />
+          <label for="The Sicklei">The Sickle</label>
+          
+          <br />
+
+          <input type="checkbox" id="Black Ink" name="invention" value="Black Ink" />
+          <label for="Black Ink">Black Ink</label>
+          
+          <br />
+
+          <input type="checkbox" id="Calendar" name="invention" value="Calendar" />
+          <label for="Calendar">Calendar</label>
+          
+          <br />
+
+          <input type="checkbox" id="Cosmetics Makeup" name="invention" value="Cosmetics Makeup" />
+          <label for="Cosemtics Makeup">Cosmetics Makeup</label>
+          
+          <br />
+
+          
+        </fieldset>
+        <br>
+        <h3>What is this invention?</h3>
         <img
           src="images/toothpaste.webp"
           alt="Toothpaste"
           width="232"
           height="160" />
+          <form id="answer-the-questions" method="get">
+        <fieldset form="answer-the-questions">
+          <legend>Answer the question</legend>
+          <label for="fill-in-blank-1"></label>
+          <input type="text" id="fill-in-blank-1" />
+        </fieldset>
+      </form>
       </td>
+      <input
+        type="submit"
+        id="submit-button"
+        name="submit"
+        value="Submit Form"
+      />
+
+      <br>
+
+      <footer>
+        <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+      </ul>
+    </nav>
+    <br>
+      <p>Copyright &#169; 2026 Roaa Elrefai</p>
+      </footer>
     </main>
   </body>
 </html>
